@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <title>CSIT Login</title>
+    </head>
+    <body>
+        <div class="fluid-container p-2">
+            <center>
+                <h2>Welcome to CSIT Login Page</h2>
+            </center>
+            <form class="p-3" action="login.php" method="POST">
+                <div class="row mb-3">
+                    <label for="inputEmail" class="col-2 col-form-label">User Name:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" name="username">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" name="password">
+                        <button type="submit" class="btn btn-primary mt-3" name="submit">Sign in</button>
+                        <br><br>Not a member? Please register to become one<br>
+                        <a href="registration.html" class="btn btn-success mt-3">Register</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
